@@ -9,6 +9,7 @@
 
 html, body, .capa {
 	height: 100%;
+	overflow: auto;
 }
 
 body {
@@ -78,8 +79,6 @@ nav.navbar-transparente {
 	border-radius: 500px;
 	-webkit-border-radius: 500px;
 	-moz-border-radius: 500px;
-	padding: 10px 35px;
-	margin: 0 15px;
 	text-transform: uppercase;
 	transition: background 0.4s, color 0.4s;
 }
@@ -143,8 +142,7 @@ footer {
 
 
 /* ======================== tipografia ======================== */
-h1 {
-	font-size: 100px;
+h1 {	
 	font-weight: 900;
 	letter-spacing: -0.05em;
 	margin-bottom: 50px;
@@ -174,4 +172,32 @@ h3 {
 
 #recursos h3 {
 	color: #9bf0e1;
+}
+
+
+/* ======================= media query ======================== */
+/* xs < 768  */
+@media screen and (max-width: 767px) {
+	h1 {
+		font-size: 50px;
+	}
+
+	.btn-custom {
+		margin: 10px 15px;	
+	}	
+}
+
+/* sm */
+@media screen and (min-width: 768px) {
+	h1 {
+		font-size: 70px;
+	}
+}
+
+/* lg */
+@media screen and (min-width: 1200px) {
+	h1 {
+		font-size: 100px;
+	}
+
 }
